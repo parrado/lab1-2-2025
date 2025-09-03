@@ -8,7 +8,7 @@ GDSPROC <br />
 Uniquindío <br />
 </p>
 
-Con esta práctica de laboratorio se iniciará el desarrollo del código fuente en Python del proyecto del espacio académico. En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código del lado del servidor para la gestión de usuarios y citas para el sistema de teleconsulta médica.
+Con esta práctica de laboratorio se iniciará el desarrollo del código fuente en Python del proyecto del espacio académico. En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código del lado del servidor para la gestión de usuarios y consultas para el sistema de teleconsulta médica.
 
 <p align="center">
 <img  src="Programación-II-2025.png" width="800" >
@@ -18,7 +18,7 @@ En ese sentido, la práctica de laboratorio tiene como propósito la creación d
 
 ## Requerimientos básicos
 
-El sistema de teleconsulta médica debe contar con la capacidad de gestionar pacientes, médicos y citas. Para esto, y en el caso de los pacientes y médicos, el sistema debe contar con las siguientes características minimas:
+El sistema de teleconsulta médica debe contar con la capacidad de gestionar pacientes, médicos y consultas. Para esto, y en el caso de los pacientes y médicos, el sistema debe contar con las siguientes características minimas:
 
 * Registro de usuarios con la siguiente información:
     - Número de cédula.
@@ -37,7 +37,7 @@ De otro lado, para el caso de las consultas médicas, el sistema debe contar con
     - Fecha y hora de la consulta.
 * Registro de la prescripción médica al finalizar la consulta.
 
-Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[2]](#2) desde diccionarios de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
+Considerando lo anterior, se recomienda que la gestión de la información de usuarios y consultas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[2]](#2) desde diccionarios de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
 
 ## Reto 1: Representación de información del usuario
 
@@ -57,11 +57,11 @@ Para este reto deberá añadir al módulo de Python una función para permitir e
 
 ## Reto 4: Gestión de consultas médicas
 
-Para este reto incorporará elementos de los retos anteriores con el fin de crear un módulo de Python para la gestión de citas médicas. El módulo debe incluir al menos una función que permita:
+Para este reto incorporará elementos de los retos anteriores con el fin de crear un módulo de Python para la gestión de consultas médicas. El módulo debe incluir al menos una función que permita:
 
 * Agendar consulta con un médico en una fecha y hora específica, el médico debe existir como usuario registrado.
 * El paciente debe haber iniciado sesión para poder agendar una consulta. 
-* Las citas deben ser almacenadas en un archivo de texto como objetos JSON desde diccionarios de Python, de forma similar a lo realizado para los usuarios.
+* Las consultas deben ser almacenadas en un archivo de texto como objetos JSON desde diccionarios de Python, de forma similar a lo realizado para los usuarios.
 
 ## Entrega del laboratorio
 
