@@ -61,7 +61,7 @@ Para este reto incorporará elementos de los retos anteriores con el fin de crea
 
 * Agendar consulta con un médico en una fecha y hora específica, el médico debe existir como usuario registrado.
 * El paciente debe haber iniciado sesión para poder agendar una consulta. 
-* Las citas deben ser almacenadas en un archivo de texto como objetos JSON desde diccionarios de Python, de forma similar a lo realizado para los usuarips.
+* Las citas deben ser almacenadas en un archivo de texto como objetos JSON desde diccionarios de Python, de forma similar a lo realizado para los usuarios.
 
 ## Entrega del laboratorio
 
