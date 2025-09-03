@@ -1,18 +1,28 @@
 <h1 align="center">
-Lab 1: Uso de OpenCV con Python (RA 1, RA 3 y RA 4) <br />
+Lab 1: Tipos de Datos Avanzados y Archivos en Python (RA 1, RA 3 y RA 4) <br />
  </h1>
  <p align="center">
 Alexander López-Parrado, PhD. <br />
-Programación, I-2025 <br />
+Programación, II-2025 <br />
 GDSPROC <br />
 Uniquindío <br />
 </p>
 
-Esta práctica de laboratorio busca introducir la biblioteca OpenCV (*Open Computer Vision*) y su uso mediante el lenguaje de programación Python, OpenCV es una biblioteca para visión por computador y procesamiento de imágenes la cual será usada para el desarrollo del proyecto [[1]](#1). En ese sentido, con esta práctica de laboratorio aprenderá aspectos básicos de procesamiento de imágenes con OpenCV usando Python, además se proponen algunos retos para poner en práctica sus habilidades en programación y a su vez construir código base para el desarrollo del proyecto.
+Con esta práctica de laboratorio se iniciará el desarrollo del código fuente en Python del proyecto del espacio académico. En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código del lado del servidor para la gestión de usuarios y consultas.
+
+Esta practica de laboratorio En ese sentido, se proponen algunos retos para poner en práctica sus habilidades en programación y a su vez construir código base para el desarrollo del proyecto.
 
 
+Esta práctica de laboratorio
+En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código para el manejo de los usuarios del sistema de teleconsulta médica.
 
-## Instalación de OpenCV
+<p align="center">
+<img  src="Programación-II-2025.png" width="800" >
+</p>
+
+En ese sentido, la práctica de laboratorio tiene como propósito la creación de funciones que permitan realizar la gestión de los usuarios (pacientes y médicos) y de las consultas mediante el uso de tipos de datos avanzados como: diccionarios, connjuntos y tuplas, así como archivos de texto y las demás estructuras de programación y tipos de datos estudiados hasta el momento.
+
+## Requerimientos básicos
 
 Para instalar la biblioteca OpenCV solo digite el siguiente comando desde una terminal: `python -m pip install opencv-contrib-python`. En todo caso, podrá encontrar una explicación detallada en el [siguiente video](https://www.youtube.com/watch?v=yYrWq3BfRuo). 
 
