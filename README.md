@@ -96,9 +96,11 @@ El informe de laboratorio y el enlace al repositorio de GitHub deben ser compart
 ## Referencias
 
 <a id="1">[1]</a> 
-Geeks for Geeks, "Javascript JSON",url=[https://www.w3schools.com/js/js_json.asp](https://www.w3schools.com/js/js_json.asp).
-
-<a id="2">[2]</a> 
 W3schools, "What is an IP Address?",url=[https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-an-ip-address/
 ](https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-an-ip-address/
 ).
+
+<a id="2">[2]</a> 
+Geeks for Geeks, "Javascript JSON",url=[https://www.w3schools.com/js/js_json.asp](https://www.w3schools.com/js/js_json.asp).
+
+
