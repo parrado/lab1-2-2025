@@ -14,9 +14,24 @@ Con esta práctica de laboratorio se iniciará el desarrollo del código fuente 
 <img  src="Programación-II-2025.png" width="800" >
 </p>
 
-En ese sentido, la práctica de laboratorio tiene como propósito la creación de funciones que permitan realizar la gestión de los usuarios (pacientes y médicos) y de las consultas mediante el uso de tipos de datos avanzados como: diccionarios, connjuntos y tuplas, también se usarán archivos de texto y las demás estructuras de programación y tipos de datos estudiados hasta el momento.
+En ese sentido, la práctica de laboratorio tiene como propósito la creación de funciones que permitan realizar la gestión de los usuarios (pacientes y médicos) y de las consultas mediante el uso de tipos de datos avanzados como: diccionarios, connjuntos y tuplas; también se usarán archivos de texto y las demás estructuras de programación y tipos de datos estudiados hasta el momento.
 
 ## Requerimientos básicos
+
+El sistema de teleconsulta médica debe contar con la capacidad de gestionar pacientes, médicos y citas. Para esto, y en el caso de los pacientes y médicos, el sistema debe contar con las siguientes características minimas:
+
+* Registro de usuarios mediante número de cédula y contraseña.
+* Registro del rol del usuario, paciente o médico.
+* Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)
+
+De otro lado, para el caso de las citas médicas, el sistema debe contar con las siguientes características mínimas:
+
+* Registro de la información del paciente y del médico (números de cédula).
+* Registro de la fecha y hora de la cita.
+* Registro de la prescripción médica.
+
+
+Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*Javascript Object Notation*) [[1]](#1)
 
 Para instalar la biblioteca OpenCV solo digite el siguiente comando desde una terminal: `python -m pip install opencv-contrib-python`. En todo caso, podrá encontrar una explicación detallada en el [siguiente video](https://www.youtube.com/watch?v=yYrWq3BfRuo). 
 
@@ -87,4 +102,4 @@ El informe de laboratorio y el enlace al repositorio de GitHub deben ser compart
 ## Referencias
 
 <a id="1">[1]</a> 
-OpenCV team, "About OpenCV",url=[https://opencv.org/](https://opencv.org/about/).
+W3schools, "Javascript JSON",url=[https://www.w3schools.com/js/js_json.asp](https://www.w3schools.com/js/js_json.asp).
