@@ -27,7 +27,7 @@ El sistema de teleconsulta médica debe contar con la capacidad de gestionar pac
     - Rol (paciente o médico).
 * Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)  [[1]](#1)
 
-Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, __ cuya implementación se realizará para la segunda entrega del proyecto __. En todo caso, desde ya se debe considerar el almacenamiento de la dirección IP del usuario  [[1]](#1).
+Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, **cuya implementación se realizará para la segunda entrega del proyecto**. En todo caso, desde ya se debe considerar el almacenamiento de la dirección IP del usuario  [[1]](#1).
 
 De otro lado, para el caso de las consultas médicas, el sistema debe contar con las siguientes características mínimas:
 
