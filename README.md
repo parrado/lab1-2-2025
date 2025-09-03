@@ -23,11 +23,11 @@ El sistema de teleconsulta médica debe contar con la capacidad de gestionar pac
 * Registro de usuarios con la siguiente información:
     - Número de cédula.
     - Nombre y apellidos.
-    - Contraseña
-    - Rol (paciente o médico)
+    - Contraseña.
+    - Rol (paciente o médico).
 * Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)  [[1]](#1)
 
-Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, cuya implementación se realizará para la segunda entrega del proyecto. En todo caso, desde ya se debe considerar el almacenamiento de la dirección IP del usuario  [[1]](#1).
+Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, __ cuya implementación se realizará para la segunda entrega del proyecto __. En todo caso, desde ya se debe considerar el almacenamiento de la dirección IP del usuario  [[1]](#1).
 
 De otro lado, para el caso de las consultas médicas, el sistema debe contar con las siguientes características mínimas:
 
@@ -53,7 +53,15 @@ Modifique el módulo de Python del punto anterior para que se puedan registrar m
 
 ## Reto 3: Inicio de sesión del usuario
 
-Para este reto deberá añadir al módulo de Python una función para permitir el inicio de sesión de un usuario registrado. Esta función debe verificar que el usuario existe y que ha proporcionado una contraseña correcta, en ese caso deberá
+Para este reto deberá añadir al módulo de Python una función para permitir el inicio de sesión de un usuario registrado. Esta función debe verificar que el usuario existe y que ha proporcionado una contraseña correcta, en ese caso deberá incluirse un nuevo campo en el diccionario para indicar que la sesión está activa. En el nuevo campo puede almacenar el valor que desee, teniendo en cuenta que para la segunda entrega del proyecto en ese campo se almacenará la dirección IP del usuario.
+
+## Reto 4: Gestión de consultas médicas
+
+Para este reto incorporará elementos de los retos anteriores con el fin de crear un módulo de Python para la gestión de citas médicas. El módulo debe incluir al menos una función que permita:
+
+* Agendar consulta con un médico en una fecha y hora específica, el médico debe existir como usuario registrado.
+* El paciente debe haber iniciado sesión para poder agendar una consulta. 
+* Las citas deben ser almacenadas en un archivo de texto como objetos JSON desde diccionarios de Python, de forma similar a lo realizado para los usuarips.
 
 ## Entrega del laboratorio
 
