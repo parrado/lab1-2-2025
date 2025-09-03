@@ -27,7 +27,7 @@ El sistema de teleconsulta médica debe contar con la capacidad de gestionar pac
  - Rol (paciente o médico)
 * Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)  [[1]](#1)
 
-Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, cuya implementación se realizará en la segunda entrega del proyecto. En todo caso, desde ya se debe considerar el almacenamiento de la IP  [[1]](#1).
+Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, cuya implementación se realizará para la segunda entrega del proyecto. En todo caso, desde ya se debe considerar el almacenamiento de la dirección IP del usuario  [[1]](#1).
 
 De otro lado, para el caso de las consultas médicas, el sistema debe contar con las siguientes características mínimas:
 
@@ -37,52 +37,23 @@ De otro lado, para el caso de las consultas médicas, el sistema debe contar con
  - Fecha y hora de la consulta.
 * Registro de la prescripción médica al finalizar la consulta.
 
-Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[2]](#2) desde diccionario de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
+Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[2]](#2) desde diccionarios de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
 
-## Representación de infomración de usuarios
+## Reto 1: Representación de información del usuario
 
-Para este reto se debe codificar un programa que permita representar la información de usuarios mediante diccionarios Desde el punto de vista de la visión por computadora, las imágenes son representadas como matrices o arreglos bidimensionales, en donde el número de columnas corresponde al ancho de la imagen en pixeles y el número de filas corresponde al alto de la imagen en pixeles. Por ejemplo, en la siguiente ecuación
+Para este reto se debe codificar un programa que permita representar la información de usuarios mediante diccionarios. Escriba un programa que le solicite al usuario su información de registro y que la almacene usando un diccionario.  
 
-$$
-I = \begin{pmatrix}
-  121 & 240 & 30 \\
-  1784 & 58 & 161 \\
-  75 & 18 & 93
-\end{pmatrix}
-$$
+## Reto 2: Almacenamiento en archivo de texto de la información del usuario
 
-$I$ representa una imagen de 3x3 pixeles en escala de grises, donde los valores cercanos a 255 tienen un nivel de intensidad cercano al blanco y los valores más cercanos a 0 tienen un valor de intensidad cercano al negro. En general, los pixeles tienen valores de intensidad entre 0 y 255.
+Modifique el programa del punto anterior para que la información del diccionario sea escrita en un archivo de texto. Para esto haga uso de la función `dumps` del módulo de Pythoon `json` (`from json import dumps`). El programa debe contar con al menos una función y no debe generar errores durante la creación del archivo mediante un uso apropiado de las excepciones, la función o funciones deben ser añadidas a un nuevo módulo de Python.
 
-Para lo anterior, considere el programa [test_gray.py](test_gray.py) y la imagen [gray.bmp](gray.bmp). Ejecute el programa, analice su código fuente e identifique lo que realiza así como la salida en la terminal.
+## Reto 2: Registro de multiples usuarios
 
-De otro lado, para el almacenamiento y visualización de imágenes a color se requiere el uso de tres matrices: una matriz correspondiente al plano de color azul (*blue*), una matriz correspondiente al plano de color verde (*green*) y una matriz correspondiente al plano de color rojo (*red*). Este modelo se conoce como BGR. 
+Modifique el módulo de Python del punto anterior para que se puedan registrar múltiples usuarios en el archivo de texto. En el caso de que el usuario ya exista en el archivo de texto, la función debe retornar una cadena indicando el error, en caso contrario deberá retornar una cadena indicando el registro exitoso.
 
-La representación BGR se deriva de los colores primarios de la luz, en ese sentido los demás colores se obtienen a partir de mezclas de los tres colores primarios. Por ejemplo, el color amarillo se obtiene con una mezcla de la siguiente manera: valor de azul (*blue*) B=0, verde (*green*) G=255 y rojo (*red*) R=255. De forma similar, un color violeta puede ser obtenido con la siguiente mezcla: valor de azul (*blue*) B=255, verde (*green*) G=0 y rojo (*red*) R=255.
+## Reto 3: Inicio de sesión del usuario
 
-Para lo anterior, considere el programa [test_image.py](test_image.py) y la imagen [blue_car.jfif](blue_car.jfif). Ejecute el programa, analice su código fuente e identifique lo que realiza así como la salida en la terminal.
-
-## Reto 1: Generación de una imagen monocromática
-
-Construya un programa que genere una imagen de tamaño 640x480 pixeles que contenga en el centro un cuadrado blanco de 200x200 pixeles, el resto de la imagen debe ser negra.
-
-## Reto 2: Identificación de colores
-
-Modifique el programa [test_image.py](test_image.py) para calcular los valores promedio de cada plano de color.
-
-A partir del programa modificado, construya un nuevo programa que le solicite al usuario el nombre de una de las imágenes  [blue_car.jfif](blue_car.jfif),  [red_car.jfif](red_car.jfif) o  [yellow_car.jfif](yellow_car.jfif) e identifique el color del automovil.
-
-Asegúrese que la identificación se realice a través de una función llamada `identifyColor`
-
-
-## Reto 3: Operadores para detección de bordes
-
-Para este reto requiere que usted construya un programa que identifique correctamente en las imágenes [blue_car.jfif](blue_car.jfif),  [red_car.jfif](red_car.jfif),  [yellow_car.jfif](yellow_car.jfif) o [empty.jfif](empty.jfif) si el puesto de parqueo correspondiente se encuentra ocupado o disponible. Ayuda: Consulte el funcionamiento de la función `Canny` de OpenCV.
-
-Asegúrese que la identificación se realice a través de una función llamada `identifySpot`
-
-## Retor 4: Construcción de maqueta
-
-En este último reto usted deberá construir la maqueta del proyecto y verificar el funcionamiento del programa del punto anterior haciendo uso de una cámara, para esto considere el programa [VerCamara.py](VerCamara.py).
+Para este reto deberá añadir al módulo de Python una función para permitir el inicio de sesión de un usuario registrado. Esta función debe verificar que el usuario existe y que ha proporcionado una contraseña correcta, en ese caso deberá
 
 ## Entrega del laboratorio
 
