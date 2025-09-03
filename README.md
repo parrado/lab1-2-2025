@@ -20,18 +20,24 @@ En ese sentido, la práctica de laboratorio tiene como propósito la creación d
 
 El sistema de teleconsulta médica debe contar con la capacidad de gestionar pacientes, médicos y citas. Para esto, y en el caso de los pacientes y médicos, el sistema debe contar con las siguientes características minimas:
 
-* Registro de usuarios mediante: número de cédula, nombre, apellidos y contraseña..
-* Registro del rol del usuario, paciente o médico.
-* Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)
+* Registro de usuarios con la siguiente información:
+ - Número de cédula.
+ - Nombre y apellidos.
+ - Contraseña
+ - Rol (paciente o médico)
+* Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)  [[1]](#1)
 
-De otro lado, para el caso de las citas médicas, el sistema debe contar con las siguientes características mínimas:
+Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, cuya implementación se realizará en la segunda entrega del proyecto. En todo caso, desde ya se debe considerar el almacenamiento de la IP  [[1]](#1).
 
-* Registro de la información del paciente y del médico (números de cédula).
-* Registro de la fecha y hora de la cita.
-* Registro de la prescripción médica.
+De otro lado, para el caso de las consultas médicas, el sistema debe contar con las siguientes características mínimas:
 
+* Creación de consultas con la siguiente información:
+ - Número de cédula del paciente.
+ - Número de cédula del médico.
+ - Fecha y hora de la consulta.
+* Registro de la prescripción médica al finalizar la consulta.
 
-Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[1]](#1) desde diccionario de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
+Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[2]](#2) desde diccionario de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
 
 ## Representación de infomración de usuarios
 
@@ -90,4 +96,9 @@ El informe de laboratorio y el enlace al repositorio de GitHub deben ser compart
 ## Referencias
 
 <a id="1">[1]</a> 
-W3schools, "Javascript JSON",url=[https://www.w3schools.com/js/js_json.asp](https://www.w3schools.com/js/js_json.asp).
+Geeks for Geeks, "Javascript JSON",url=[https://www.w3schools.com/js/js_json.asp](https://www.w3schools.com/js/js_json.asp).
+
+<a id="2">[2]</a> 
+W3schools, "What is an IP Address?",url=[https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-an-ip-address/
+](https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-an-ip-address/
+).
