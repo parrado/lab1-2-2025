@@ -20,7 +20,7 @@ En ese sentido, la práctica de laboratorio tiene como propósito la creación d
 
 El sistema de teleconsulta médica debe contar con la capacidad de gestionar pacientes, médicos y citas. Para esto, y en el caso de los pacientes y médicos, el sistema debe contar con las siguientes características minimas:
 
-* Registro de usuarios mediante número de cédula y contraseña.
+* Registro de usuarios mediante: número de cédula, nombre, apellidos y contraseña..
 * Registro del rol del usuario, paciente o médico.
 * Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)
 
@@ -31,23 +31,11 @@ De otro lado, para el caso de las citas médicas, el sistema debe contar con las
 * Registro de la prescripción médica.
 
 
-Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*Javascript Object Notation*) [[1]](#1)
+Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[1]](#1) desde diccionario de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
 
-Para instalar la biblioteca OpenCV solo digite el siguiente comando desde una terminal: `python -m pip install opencv-contrib-python`. En todo caso, podrá encontrar una explicación detallada en el [siguiente video](https://www.youtube.com/watch?v=yYrWq3BfRuo). 
+## Representación de infomración de usuarios
 
-Si se genera algún error con `pip` solo tiene que actualizarlo, esta es la manera correcta de hacerlo desde una terminal: 
-
-`python -m pip install --upgrade pip`\
-`pip install --upgrade pip`
-
-Puede usar el programa de prueba [OpenCv.py](OpenCv.py) para verificar que la biblioteca OpenCV se ha instalado correctamente, en particular el programa imprime en la terminal la versión de OpenCV instalada.
-
-Finalmente, con el programa [VerCamara.py](VerCamara.py) se verificará el acceso correcto a la cámara, al ejecutarse deberá abrir una ventana en donde se visualiza la cámara frontal de su computador portátil, también puede usarlo para acceder a una cámara conectada a alguno de los puertos USB. Analice el funcionamiento del programa [VerCamara.py](VerCamara.py).
-
-
-## Representación de imágenes en OpenCV
-
-Desde el punto de vista de la visión por computadora, las imágenes son representadas como matrices o arreglos bidimensionales, en donde el número de columnas corresponde al ancho de la imagen en pixeles y el número de filas corresponde al alto de la imagen en pixeles. Por ejemplo, en la siguiente ecuación
+Para este reto se debe codificar un programa que permita representar la información de usuarios mediante diccionarios Desde el punto de vista de la visión por computadora, las imágenes son representadas como matrices o arreglos bidimensionales, en donde el número de columnas corresponde al ancho de la imagen en pixeles y el número de filas corresponde al alto de la imagen en pixeles. Por ejemplo, en la siguiente ecuación
 
 $$
 I = \begin{pmatrix}
