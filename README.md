@@ -21,10 +21,10 @@ En ese sentido, la práctica de laboratorio tiene como propósito la creación d
 El sistema de teleconsulta médica debe contar con la capacidad de gestionar pacientes, médicos y citas. Para esto, y en el caso de los pacientes y médicos, el sistema debe contar con las siguientes características minimas:
 
 * Registro de usuarios con la siguiente información:
- - Número de cédula.
- - Nombre y apellidos.
- - Contraseña
- - Rol (paciente o médico)
+    - Número de cédula.
+    - Nombre y apellidos.
+    - Contraseña
+    - Rol (paciente o médico)
 * Inicio de sesión en el sistema con almacenamiento de dirección IP (*Internet Protocol*)  [[1]](#1)
 
 Esta IP será utilizada para el establecimiento de la videollamada de la teleconsulta, cuya implementación se realizará para la segunda entrega del proyecto. En todo caso, desde ya se debe considerar el almacenamiento de la dirección IP del usuario  [[1]](#1).
@@ -32,9 +32,9 @@ Esta IP será utilizada para el establecimiento de la videollamada de la telecon
 De otro lado, para el caso de las consultas médicas, el sistema debe contar con las siguientes características mínimas:
 
 * Creación de consultas con la siguiente información:
- - Número de cédula del paciente.
- - Número de cédula del médico.
- - Fecha y hora de la consulta.
+    - Número de cédula del paciente.
+    - Número de cédula del médico.
+    - Fecha y hora de la consulta.
 * Registro de la prescripción médica al finalizar la consulta.
 
 Considerando lo anterior, se recomienda que la gestión de la información de usuarios y citas se realice mediante archivos de texto almacenando objetos JSON (*JavaScript Object Notation*) [[2]](#2) desde diccionarios de Python. No se permite el uso de bibliotecas adicionales o bases de datos.
