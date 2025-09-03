@@ -14,7 +14,7 @@ Con esta práctica de laboratorio se iniciará el desarrollo del código fuente 
 <img  src="Programación-II-2025.png" width="800" >
 </p>
 
-En ese sentido, la práctica de laboratorio tiene como propósito la creación de funciones que permitan realizar la gestión de los usuarios (pacientes y médicos) y de las consultas mediante el uso de tipos de datos avanzados como: diccionarios, connjuntos y tuplas; también se usarán archivos de texto y las demás estructuras de programación y tipos de datos estudiados hasta el momento.
+En ese sentido, la práctica de laboratorio tiene como propósito la creación de módulos de Python que permitan realizar la gestión de los usuarios (pacientes y médicos) y de las consultas mediante el uso de tipos de datos avanzados como: diccionarios, connjuntos y tuplas; también se usarán archivos de texto y las demás estructuras de programación y tipos de datos estudiados hasta el momento.
 
 ## Requerimientos básicos
 
