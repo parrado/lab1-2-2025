@@ -8,19 +8,13 @@ GDSPROC <br />
 Uniquindío <br />
 </p>
 
-Con esta práctica de laboratorio se iniciará el desarrollo del código fuente en Python del proyecto del espacio académico. En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código del lado del servidor para la gestión de usuarios y consultas.
-
-Esta practica de laboratorio En ese sentido, se proponen algunos retos para poner en práctica sus habilidades en programación y a su vez construir código base para el desarrollo del proyecto.
-
-
-Esta práctica de laboratorio
-En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código para el manejo de los usuarios del sistema de teleconsulta médica.
+Con esta práctica de laboratorio se iniciará el desarrollo del código fuente en Python del proyecto del espacio académico. En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código del lado del servidor para la gestión de usuarios y citas para el sistema de teleconsulta médica.
 
 <p align="center">
 <img  src="Programación-II-2025.png" width="800" >
 </p>
 
-En ese sentido, la práctica de laboratorio tiene como propósito la creación de funciones que permitan realizar la gestión de los usuarios (pacientes y médicos) y de las consultas mediante el uso de tipos de datos avanzados como: diccionarios, connjuntos y tuplas, así como archivos de texto y las demás estructuras de programación y tipos de datos estudiados hasta el momento.
+En ese sentido, la práctica de laboratorio tiene como propósito la creación de funciones que permitan realizar la gestión de los usuarios (pacientes y médicos) y de las consultas mediante el uso de tipos de datos avanzados como: diccionarios, connjuntos y tuplas, también se usarán archivos de texto y las demás estructuras de programación y tipos de datos estudiados hasta el momento.
 
 ## Requerimientos básicos
 
