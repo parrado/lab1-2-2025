@@ -63,6 +63,8 @@ Para este reto incorporará elementos de los retos anteriores con el fin de crea
 * El paciente debe haber iniciado sesión para poder agendar una consulta. 
 * Las consultas deben ser almacenadas en un archivo de texto como objetos JSON desde diccionarios de Python, de forma similar a lo realizado para los usuarios.
 
+Para este reto no es necesario incorporar el campo correspondiente a la prescripción médica. Este será incluido en la segunda entrega del proyecto.
+
 ## Entrega del laboratorio
 
 El laboratorio debe ser presentado mediante:
